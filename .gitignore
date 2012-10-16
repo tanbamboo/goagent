@@ -2,3 +2,5 @@
 .appcfg_cookies
 *~
 *.pyc
+local/certs
+local/CA*
