@@ -12,7 +12,7 @@
 
 __version__ = '2.0.14'
 __config__  = 'proxy.ini'
-__file__    = getattr(__import__('os'), 'readlink', lambda x:x)(__file__)
+# __file__    = getattr(__import__('os'), 'readlink', lambda x:x)(__file__)
 
 import sys
 import os
