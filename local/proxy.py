@@ -159,7 +159,7 @@ class CertUtil(object):
     @staticmethod
     def _get_cert(commonname, certdir='certs', ca_keyfile='CA.key', ca_certfile='CA.crt', sans = []):
         with open(ca_keyfile, 'rb') as fp:
-            key = OpenSSL.crypto.load_privatekey(OpenSSL.crypto.FILETYPE_PEM, fp.read())
+            key = OpenSSL.crypto.load_privatekey(OpenSSL.crypto.FILETYPE_PEM, fp.read(), "goagent")
         with open(ca_certfile, 'rb') as fp:
             ca = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, fp.read())
 
